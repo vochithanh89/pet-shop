@@ -1,2 +1,2 @@
 # pet-shop
-Pet Show project using HTML, CSS, JS
+Pet Shop project using HTML, CSS, JS
