@@ -1,9 +1,10 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
-.abcd{
+
+.abcd {
     display: flex;
     justify-content: space-around;
     width: 600px;
@@ -12,44 +13,52 @@
     top: 10px;
     font-weight: bold;
 }
-.find{
+
+.find {
     display: flex;
     justify-content: space-around;
     width: 100px;
 }
-.love{
+
+.love {
     display: flex;
     justify-content: space-around;
     width: 170px;
 }
-.Vietnam{
+
+.Vietnam {
     display: flex;
     justify-content: space-around;
     width: 100px;
 }
-.logo{
+
+.logo {
     display: flex;
     justify-content: space-around;
-    width:439px;
+    width: 439px;
     align-items: center;
     position: absolute;
     top: 63px;
     font-size: 20px;
     font-weight: bold;
 }
-.content_1{
+
+.content_1 {
     display: flex;
     position: relative;
     top: 200px;
 }
-.meo{
+
+.meo {
     width: 65%;
 }
-.uu_dai{
+
+.uu_dai {
     background-color: red;
     width: 100%;
 }
-.chiet_khau{
+
+.chiet_khau {
     margin-left: 80px;
     font-size: 50px;
     text-align: center;
@@ -61,7 +70,8 @@
     line-height: 75px;
     border-radius: 40px;
 }
-.cua_hang_truc_tuyen{
+
+.cua_hang_truc_tuyen {
     margin-left: 110px;
     position: relative;
     top: 130px;
@@ -69,28 +79,32 @@
     font-size: 50px;
     color: aliceblue;
 }
-.giam_gia{
-    margin-left:18px;
+
+.giam_gia {
+    margin-left: 18px;
     position: relative;
     top: 200px;
     font-weight: bold;
     font-size: 45px;
     color: aliceblue;
 }
-.content_2{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+.content_2 {
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     color: red;
     font-size: 35px;
     margin-top: 250px;
     margin-left: 800px;
 }
-.content_3_left_1{
+
+.content_3_left_1 {
     margin-left: 30px;
     width: 290px;
     height: 263px;
     background-color: rgb(215, 211, 211);
 }
-.theloai{
+
+.theloai {
     position: relative;
     top: 20px;
     left: 60px;
@@ -103,28 +117,32 @@
     color: aliceblue;
     font-weight: bold;
 }
-.the_loai{
+
+.the_loai {
     display: flex;
     justify-content: space-around;
     position: relative;
     top: 30px;
     height: 50px;
 }
-.content_3{
+
+.content_3 {
     display: flex;
     justify-content: space-around;
 }
-.content_3_left_2{
+
+.content_3_left_2 {
     width: 290px;
     height: 500px;
     background-color: rgb(215, 211, 211);
     margin-top: 200px;
 }
-.nhung_san_pham_tuong_tu{
+
+.nhung_san_pham_tuong_tu {
     background-color: rgb(232, 227, 227);
     color: red;
     font-size: 42px;
-    width:262px;
+    width: 262px;
     height: 149px;
     position: relative;
     top: 37px;
@@ -132,63 +150,74 @@
     text-align: center;
     font-weight: bold;
 }
-.nhung_san_pham_tuong_tu_item{
+
+.nhung_san_pham_tuong_tu_item {
     display: flex;
     margin-left: 20px;
     height: 100px;
     position: relative;
     top: 50px;
+}
 
+.anh_nhung_san_pham_tuong_tu_item {
+    width: 116px;
+    height: 91px;
 }
-.anh_nhung_san_pham_tuong_tu_item{
-    width:116px ;
-    height:91px;
-}
-.nhung_san_pham_tuong_tu_item_b{
+
+.nhung_san_pham_tuong_tu_item_b {
     position: relative;
     top: 35px;
     left: 10px;
 }
-.anh_content_3_right_1{
-    width:400px;
-    height:400px ;
+
+.anh_content_3_right_1 {
+    width: 400px;
+    height: 400px;
 }
-.content_3_right_1{
+
+.content_3_right_1 {
     display: flex;
     justify-content: space-around;
     width: 1000px;
     height: 500px;
 }
-.content_3_right_1_b_1{
+
+.content_3_right_1_b_1 {
     font-size: 30px;
     position: relative;
-    left:90px;
+    left: 90px;
 }
-.content_3_right_1_b_2{
+
+.content_3_right_1_b_2 {
     color: red;
     position: relative;
     left: 190px;
 }
-.content_3_right_1_b_1_2{
+
+.content_3_right_1_b_1_2 {
     font-size: 30px;
     position: relative;
-    left:130px;
+    left: 130px;
 }
-.footer{
+
+.footer {
     display: flex;
     justify-content: space-between;
     height: 100%;
 }
-.footer_2{
+
+.footer_2 {
     position: relative;
     top: 35px;
 }
-.footer_4{
+
+.footer_4 {
     position: relative;
     top: 35px;
     font-size: 30px;
 }
-.fb_ins_tw{
+
+.fb_ins_tw {
     display: flex;
     justify-content: space-around;
     width: 100px;
