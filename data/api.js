@@ -1,18 +1,22 @@
 const pageSize = 10;
 
-const getList = ({
+const getProducts = ({
     page = 1,
     category = 0,
     sort = 0
 }) => {
-    let result = data.filter((pet) => {
-        return pet.categoriesId.includes(category);
+    let result = products.filter((product) => {
+        return product.categoriesId.includes(category);
     });
-    result = data.slice(pageSize * page - 1, pageSize * page + 10);
+    result = products.slice(pageSize * page - 1, pageSize * page + 10);
     // 
     return result.sort();
 }
 
-const getPet = (id) => {
-    return data.find((pet) => pet.id === id);
+const getProduct = (id) => {
+    return products.find((product) => product.id === id);
+}
+
+const getCategory = (id) => {
+    return products.find((product) => product.id === id);
 }

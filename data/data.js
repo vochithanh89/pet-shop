@@ -1,10 +1,10 @@
-// const data = [{
+// const products = [{
 //     id,
 //     name,
 //     description,
 //     thunail,
 //     images,
-//     categoriesId,
+//     categoryId,
 // }]
 
 // const categories = [
