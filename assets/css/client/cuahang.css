@@ -1,46 +1,71 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
-.anh{
-width: 100%;
-height: 100%;
-position: relative;
-}
-.abcd{
-display: flex;
-justify-content: space-around;
-width: 600px;
-position: absolute;
-left: 1200px;
-top: 10px;
-color: aliceblue;
-font-weight: bold;
-}
-.find{
-display: flex;
-justify-content: space-around;
-width: 100px;
-}
-.love{
-display: flex;
-justify-content: space-around;
-width: 170px;
 
-}
-.Vietnam{
-display: flex;
-justify-content: space-around;
-width: 100px;
-}
-.logo{
+.abcd {
     display: flex;
     justify-content: space-around;
-    width:439px;
+    width: 700px;
+    position: absolute;
+    left: 750px;
+    top: 10px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.find {
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+}
+
+.love {
+    display: flex;
+    justify-content: space-around;
+    width: 180px;
+}
+
+.Vietnam {
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-around;
+    width: 439px;
     align-items: center;
     position: absolute;
     top: 63px;
-    color: aliceblue;
     font-size: 20px;
     font-weight: bold;
+}
+.body{
+    display: flex;
+    justify-content: space-around;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.footer_2 {
+    position: relative;
+    top: 35px;
+}
+
+.footer_4 {
+    position: relative;
+    top: 35px;
+    font-size: 30px;
+}
+
+.fb_ins_tw {
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
 }
