@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+      <p id="namesp">Tên sản phẩm</p>
+      <p id="gia">20000</p>
+      <input id="soluong" type="number" value="0" min="0" step="1">
+      <input type="button" id="themvaogiohang" value="Thêm vào giỏ hàng" onclick="add()">
+    </div>
+    <a href="/"></a>
+    <script>
+      function add(){
+        var namesp = document.getElementById('namesp').innerHTML;
+        var gia = document.getElementById('gia').innerHTML;
+        var soluong = document.getElementById('soluong').value;
+        var sp = {
+          namesp: namesp,
+          gia: gia,
+          soluong: soluong
+        };
+        var giohang = localStorage.getItem('giohang');
+        if (!giohang) {
+          giohang = [];
+        } else {
+          giohang = JSON.parse(giohang);
+        }
+        giohang.push(sp);
+        localStorage.setItem('giohang', JSON.stringify(giohang));
+        alert('Đã thêm sản phẩm vào giỏ hàng.');
+      }
+    </script>
+  </body>  
+</html>
