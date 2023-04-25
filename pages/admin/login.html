@@ -4,45 +4,153 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600|Open+Sans:400,600,700" rel="stylesheet">
+
     <link rel="stylesheet" href="../../assets/css/admin/spur.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+    <script src="../../assets/js/admin/chart.bundle.min.js"></script>
     <script src="../../assets/js/admin/chart-js-config.js"></script>
-    <title>Spur - A Bootstrap Admin Template</title>
+    <title>Petshop CMS</title>
 </head>
 
 <body>
     <div class="form-screen">
-        <a href="index.html" class="spur-logo"><i class="fas fa-bolt"></i> <span>Spur</span></a>
+        <a href="../client/trangchu.html" class="spur-logo">
+            <i class="fas fa-bolt"></i> 
+            <span>Petshop CMS</span>
+        </a>
         <div class="card account-dialog">
             <div class="card-header bg-primary text-white"> Please sign in </div>
             <div class="card-body">
-                <form action="#!">
+                <form action="#!" id="login-form">
                     <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="text" class="form-control" id="user-name" aria-describedby="Username"
+                            placeholder="User name">
+                        <small class="error-message form-text text-danger"></small>
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                        <small class="error-message form-text text-danger"></small>
                     </div>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="customCheck1">
                             <label class="custom-control-label" for="customCheck1">Remember me</label>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="account-dialog-actions">
                         <button type="submit" class="btn btn-primary">Sign in</button>
-                        <a class="account-dialog-link" href="signup.html">Create a new account</a>
+                        <!-- <a class="account-dialog-link" href="signup.html">Create a new account</a> -->
                     </div>
                 </form>
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <script src="../../assets/js/admin/jquery.js"></script>
+    <script src="../../assets/js/admin/popper.min.js"></script>
+    <script src="../../assets/js/admin/bootstrap.min.js"></script>
     <script src="../../assets/js/admin/spur.js"></script>
+
+    <script src="../../data/data.js"></script>
+    <script src="../../data/api.js"></script>
+
+    <script>
+        const validateForm = {
+            userName: (selector) => {
+                const value = document.querySelector(selector).value;
+                const result = {
+                    value,
+                    isValidate: true,
+                    message: 'Success',
+                };
+
+                if (!value.trim()) {
+                    result.isValidate = false;
+                    result.message = 'User name is empty';
+                    return result;
+                }
+
+                if (value.trim().length > 10) {
+                    result.isValidate = false;
+                    result.message = 'User name is longer than 10 character';
+                    return result;
+                }
+
+                return result;
+            },
+            password: (selector) => {
+                const value = document.querySelector(selector).value;
+                const result = {
+                    value,
+                    isValidate: true,
+                    message: 'Success',
+                };
+
+                if (!value.trim()) {
+                    result.isValidate = false;
+                    result.message = 'Password is empty';
+                    return result;
+                }
+
+                if (value.trim().length > 10) {
+                    result.isValidate = false;
+                    result.message = 'Password is longer than 10 character';
+                    return result;
+                }
+
+                return result;
+            },
+        }
+
+        const validate = (selector, type) => {
+            const element = document.querySelector(selector);
+            const result = validateForm[type](selector);
+
+            if (!result.isValidate) {
+                element.nextElementSibling.innerText = result.message;
+            } else {
+                element.nextElementSibling.innerText = '';
+            }
+
+            return result;
+        }
+
+        // document.querySelector('#user-name').onblur = (e) => {
+        //     validate('#user-name', 'userName');
+        // }
+
+        // document.querySelector('#password').onblur = (e) => {
+        //     validate('#password', 'password');
+        // }
+
+        document.querySelector('#login-form').onsubmit = (e) => {
+            e.preventDefault();
+            const userName = validate('#user-name', 'userName');
+            const password = validate('#password', 'password');
+
+            if (userName.isValidate && password.isValidate) {
+                const auth = authentication(userName.value, password.value);
+
+                if (!auth.isSuccess) {
+                    alert("Login failed");
+                } else {
+                    localStorage.setItem('auth', JSON.stringify(auth));
+                    window.location.href = '/pages/admin/dashboard.html';
+                }
+
+            }
+
+        }
+
+
+
+    </script>
+
+
 </body>
 
 </html>
