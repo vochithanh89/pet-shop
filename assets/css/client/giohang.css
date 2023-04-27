@@ -79,3 +79,18 @@
     justify-content: space-around;
     width: 100px;
 }
+.content123{
+    display: flex;
+}
+.p4{
+    position: relative;
+    left: 15px;
+}
+.p5{
+    position: relative;
+    left: 100px;
+}
+.p6{
+    position: relative;
+    left:160px;
+}

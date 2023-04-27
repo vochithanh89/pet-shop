@@ -4,7 +4,14 @@ var giohang = localStorage.getItem('giohang');
           var dsgiohang = document.getElementById('dsgiohang');
           for (var i = 0; i < giohang.length; i++) {
             var sp = giohang[i];
-            var hienthi = '<li><b class="p1">Tên sản phẩm:</b> ' + sp.namesp + ', <b class="p2">Số lượng:</b> <input type="number" value="' + sp.soluong + '" min="0" step="1" onchange="changeQuantity(' + i + ', this.value)">, <b class="p3">Giá:</b> ' + sp.gia + ' <button onclick="removeItem(' + i + ')">Xóa</button></li>';
+            var hienthi = '<li>' +
+            '<div class="content">' +
+              '<p><b class="p4">' + sp.namesp + '</b></p>' +
+              '<p><b class="p5">' + sp.soluong + '</b></p>' +
+              '<p><b class="p6">' + sp.gia + '</b></p>' +
+              '<button tyle="margin-right:-100px;";" onclick="removeItem(' + i + ')">Xóa</button>' +
+            '</div>' 
+          '</li>';
             dsgiohang.insertAdjacentHTML('beforeend', hienthi);
           }
         } else {
@@ -36,7 +43,14 @@ var giohang = localStorage.getItem('giohang');
             var thanhTien = sp.soluong * sp.gia;
             tongTien += thanhTien;
             tenSanPham += sp.namesp + ', ';
-            var hienthi = '<li><b class="p1">Tên sản phẩm:</b> ' + sp.namesp + ', <b class="p2">Số lượng:</b> <input type="number" value="' + sp.soluong + '" min="0" step="1" onchange="changeQuantity(' + i + ', this.value)">, <b class="p3">Giá:</b> ' + sp.gia + ' <button onclick="removeItem(' + i + ')">Xóa</button></li>';
+            var hienthi = '<li >' +
+            '<div class="content">' +
+              '<p><b class="p4">' + sp.namesp + '</b></p>' +
+              '<p><b class="p5">' + sp.soluong + '</b></p>' +
+              '<p><b class="p6">' + sp.gia + '</b></p>' +
+              '<button onclick="removeItem(' + i + ')" style="margin-right:-100px;";">Xóa</button>' +
+            '</div>'
+          '</li>';
             dsgiohang.insertAdjacentHTML('beforeend', hienthi);
           }
           var spElement = document.querySelector('.sp');
