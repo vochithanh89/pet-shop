@@ -52,34 +52,34 @@
         
 
                 <div class="content">
-                    <p><b>Sản phẩm</b></p>
-                    <p><b>Số lượng</b></p>
-                    <p><b>Giá</b></p>
+                    <p><b class="p1">Sản phẩm</b></p>
+                    <p><b class="p2">Số lượng</b></p>
+                    <p><b class="p3">Giá</b></p>
                 </div>
-                <div class="Hien_thi">
-
-
-                </div>
+                <div>
+                    <ul id="dsgiohang">
+                    </ul>
+                  </div>
                 <div class="thao_tac">
                     <input style="background-color: rgb(172, 180, 186);border-radius: 20px;text-align: center;" type="text" placeholder="Mã giảm giá">
                    <button style="background-color: red;color: aliceblue;width: 200px;height: 50px;line-height: 50px;text-align: center;border-radius: 20px;font-weight: bold;"> Áp dụng phiếu giảm giá</button>
-                    <button style="background-color: red;color: aliceblue;width: 150px;border-radius: 20px;line-height: 50px;text-align: center;font-weight: bold;">Cập nhật giỏ hàng</button>
+                    <button onclick="updateCart()" style="background-color: red;color: aliceblue;width: 150px;border-radius: 20px;line-height: 50px;text-align: center;font-weight: bold;">Cập nhật giỏ hàng</button>
                 </div><br><br><br><br>
                 <div class="thanh_toan">
                     <div style="display: flex;justify-content: space-around;width: 300px;">
                     <p><b>Tổng tiền</b></p>
                      </div><br>
                      <div style="display: flex;justify-content: space-around;width: 300px;">
-                        <p><b>Sản phẩm</b></p>
-                        <input style="width: 100px;" type="text">
+                        <p><b >Sản phẩm</b></p>
+                        <input class="sp" style="width: 100px;" type="text">
                          </div><br>
                          <div style="display: flex;justify-content: space-around;width: 300px;">
                             <p style=""><b>Thuế</b></p>
-                            <input style="width: 100px;margin-left: 30px;" type="text">
+                            <input class="thue" style="width: 100px;margin-left: 30px;" type="text">
                              </div><br>
                              <div style="display: flex;justify-content: space-around;width: 300px;">
                                 <p><b>Tổng cộng</b></p>
-                                <input style="width: 100px;margin-left: -10px;" type="text">
+                                <input class="tongcong" style="width: 100px;margin-left: -10px;" type="text">
                                  </div><br>
                     <div><br>
                         <button style="background-color: red;color: aliceblue;width: 150px;border-radius: 20px;text-align: center;height: 30px;line-height: 30px;margin-left: 80px;"><b>Thanh toán</b></button><br><br>
@@ -144,6 +144,6 @@
 
 
     </div>
-    <script src="../../assets/js/client/giohang.js"></script>
+    <script src="../../assets/js/client/giohang.js"></script>   
 </body>
 </html>

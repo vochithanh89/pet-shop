@@ -4,18 +4,189 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chi tiết thú cưng</title>
+    <link rel="stylesheet" href="../../assets/css/client/chitietthucung.css">
+    <link rel="stylesheet" href="../../assets/css/index.css">
+
+
+    <script src="https://kit.fontawesome.com/b8c53641bf.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div>
-      <p id="namesp">Tên sản phẩm</p>
-      <p id="gia">20000</p>
-      <input id="soluong" type="number" value="0" min="0" step="1">
-      <input type="button" id="themvaogiohang" value="Thêm vào giỏ hàng" onclick="add()">
+    <div id="web">
+
+
+
+        <div class="header">
+            <img style="width: 100%;" src="../../assets\images\img_cuahang\2.jpg" alt="">
+            
+                <div class="abcd">
+                    <div class="find">
+                        <p>Tìm kiếm</p>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="love">
+                        <p>Danh sách yêu thích</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="Vietnam">
+                        <img style="width: 20px;" src="../../assets/images/img_trangchu/coVN.jpg" alt="">
+                        <p>Tiếng việt</p>
+                    </div>
+                    <p>Tài khoản của tôi</p>
+                </div>
+            </div>
+            <div class="logo">
+                <img style="width:84px;height: 73px;" src="../../assets/images/img_trangchu/1.jpg" alt="">
+                <p ><a style="border: 1px solid red;padding: 10px;border-radius: 10px;background-color: red;color: aliceblue;text-decoration: none;" href="http://127.0.0.1:5500/pages/client/trangchu.html">Trang chủ</a></p>
+                <p><a style="text-decoration: none;color: black;" href="http://127.0.0.1:5500/pages/client/cuahang.html">Cửa hàng</a></p>
+                <p><a style="text-decoration: none;color: black;" href="http://127.0.0.1:5500/pages/client/giohang.html">Giỏ hàng</a></p>
+            </div>
+        <div>
+            <div style="position: relative; top: -200px;left:100px;color: aliceblue;font-size: 45px;background-color: red; border-radius: 20px;width: 400px;text-align: center;height: 80px;line-height:80px;">Chi tiết thú cưng</div>
+            <div style="display: flex;color: aliceblue;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;position: relative;top: -250px;margin-left: 1100px;">
+            <div>Trang chủ</div>
+            <div>/</div> 
+            <div>Chi tiết thú cưng</div>
+            </div>
+                </div>
+
+            <div class="content">
+                <div class="content-left">
+                    <div>
+                    <img style="width: 200px;height: 200px;" src="../../assets\images\img_cttcung\3.jpg" alt="">
+                </div>
+                    <div>
+                    <img style="width: 200px;height: 200px;" src="../../assets\images\img_cttcung\2.jpg" alt="">
+                </div>
+                    <div>
+                    <img style="width: 200px;height: 200px;" src="../../assets\images\img_cttcung\4.jpg" alt="">
+                </div>
+                    <div>
+                    <img style="width: 200px;height: 200px;" src="../../assets\images\img_cttcung\5.jpg" alt="">
+                </div>
+
+                </div>
+
+
+
+                <div class="content-center">
+                    <img style="width: 500px;height: 800px;" src="../../assets/images/img_cttcung/1.jpg" alt="">
+                </div>
+
+                <div class="content-right">
+                    <p id="namesp" style="background-color: red;width: 120px;font-size: 40px;height: 50px;line-height: 50px;text-align: center;">pj chó</p><br>
+                    <p id="gia" style="color: red;margin-left: 40px;">27</p><br>
+                    <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit,sed do<br>eiusmod tempor incididunt utlabore<br>et dolore magna aliqua. Odio ut sem<br>nulla pharetra diam.</p><br><br>
+                    <div style="display: flex; justify-content: space-between;">
+                        <b style="background-color: rgb(194, 196, 199);width: 100px;text-align: center;height: 30px;line-height: 30px;">Số lượng</b>
+                        <input id="soluong" style="width: 50px;height: 30px;" type="number" step="1" min="1" max="10">
+                    </div><br><br>
+                    <input onclick="add()" type="button" value="Thêm vào giỏ hàng" style="background-color: red;width: 200px;height: 50px;line-height: 50px;text-align: center;color: aliceblue;font-weight: bold;margin-left: 30px;border-radius: 20px;"></input><br><br>
+                    <button><p style="color: red;"><b>Thêm vào danh sách yêu thích</b></p></button><br>  
+                    <p><b>Danh mục:</b> chó</p>
+                    <p><b>Mã hàng:</b> 9999</p>
+                </div>
+            </div><br><br><br><br>
+            <div>
+                <p style="margin-left: 630px;"><b>Những sản phẩm liên quan</b></p><br><br>
+                <div class="sp_lien_quan">
+                    <div>
+                    <div>
+                       <a href=""> <img style="width: 320px;height: 320px;" src="../../assets\images\img_cttcung\6.jpg" alt=""></a>
+                    </div>
+                    <p style="margin-left: 80px;"><b>Đồ chơi mềm cho chó</b></p>
+                    <p style="color: red;margin-left: 130px;"><b>$25</b></p>
+                    </div>
+                    <div>
+                        <div>
+                            <a href=""><img style="width: 320px;height: 320px;" src="../../assets\images\img_cttcung\7.jpg" alt=""></a>
+                        </div>
+                        <p style="margin-left: 100px;"><b>Áo mưa ấm áp</b></p>
+                        <p style="color: red;margin-left: 135px;"><b>$58</b></p>
+                        </div>
+                        <div>
+                            <div>
+                                <a href=""><img style="width: 320px;height: 320px;" src="../../assets\images\img_cttcung\8.jpg" alt=""></a>
+                            </div>
+                            <p style="margin-left: 130px;"><b>Áo cho chó</b></p>
+                            <p style="color: red;margin-left: 155px;"><b>$100</b></p>
+                            </div>
+                </div>
+            </div><br>
+
+
+
+
+
+
+
+
+        <div>
+            <img style="width: 100%;height: 255px;" src="../../assets/images/img_trangchu/10.jpg" alt="">
+        </div>
+
+        <div class="footer">
+            <div class="footer_1">
+                <div>
+                    <img style="width:84px;height: 73px;" src="../../assets/images/img_trangchu/1.jpg" alt="">
+                </div>
+                <p style="width:123px;height: 84px;font-size: 12px;">Petshop là nơi cung cấp những sản phẩm và dịch vụ tốt nhất cho bạn.</p>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="footer_2">
+                <p style="font-size: 25px;height:40px;font-weight: bold;">Liên kết hữu ích</p>
+                <p style="font-size: 12px;height:30px;">Câu hỏi thường gặp</p>
+                <p style="font-size: 12px;height:30px;">Giới thiệu</p>
+                <p style="font-size: 12px;height:30px;">Liên hệ chúng tôi</p>
+            </div>
+
+
+
+
+            <div class="footer_2">
+                <p style="font-size: 25px;height:40px;font-weight: bold;">Tài khoản của tôi</p>
+                <p style="font-size: 12px;height:30px;">Theo dõi đơn hàng của tôi</p>
+                <p style="font-size: 12px;height:30px;">Danh sách yêu thích</p>
+                <p style="font-size: 12px;height:30px;">Gửi phản hồi của bạn</p>
+            </div>
+
+
+
+
+            <div class="footer_4">
+                <p>Hoạt động từ 8-18h hàng tuần.<br> Địa chỉ: 184 đường số 6, phường 7,<br> quận Gò Vấp, Tp. Hồ Chí Minh.
+                </p>
+            </div>
+
+
+
+        </div>
+        <div class="fb_ins_tw">
+            <i style="color: blue;" class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i style="color: blue;" class="fa-brands fa-twitter"></i>
+        </div>
+
+
+
+
+
+
+
+
+
     </div>
-    <a href="/"></a>
+    <script src="../../assets/js/client/chitietthucung.js">
+    </script>
     <script>
-      function add(){
+         function add(){
         var namesp = document.getElementById('namesp').innerHTML;
         var gia = document.getElementById('gia').innerHTML;
         var soluong = document.getElementById('soluong').value;
@@ -35,5 +206,5 @@
         alert('Đã thêm sản phẩm vào giỏ hàng.');
       }
     </script>
-  </body>  
+</body>
 </html>
