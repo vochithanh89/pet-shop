@@ -59,6 +59,13 @@
     <script src="../../data/api.js"></script>
 
     <script>
+        // check auth
+        const auth = localStorage.getItem('auth') ? JSON.parse(localStorage.getItem('auth')) : null;
+
+        if (auth || auth.roles <= 2) {
+            window.location.href = '/pages/admin/dashboard.html';
+        }
+        // validate
         const validateForm = {
             userName: (selector) => {
                 const value = document.querySelector(selector).value;
@@ -119,13 +126,13 @@
             return result;
         }
 
-        // document.querySelector('#user-name').onblur = (e) => {
-        //     validate('#user-name', 'userName');
-        // }
+        document.querySelector('#user-name').onblur = (e) => {
+            validate('#user-name', 'userName');
+        }
 
-        // document.querySelector('#password').onblur = (e) => {
-        //     validate('#password', 'password');
-        // }
+        document.querySelector('#password').onblur = (e) => {
+            validate('#password', 'password');
+        }
 
         document.querySelector('#login-form').onsubmit = (e) => {
             e.preventDefault();

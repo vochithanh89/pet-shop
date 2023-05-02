@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
 
     <script src="https://kit.fontawesome.com/b8c53641bf.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div id="web">
 
@@ -18,85 +20,141 @@
 
         <div class="header">
             <img style="width: 100%;" src="../../assets\images\img_giohang\1.jpg" alt="">
-            
-                <div class="abcd">
-                    <div class="find">
-                        <p>Tìm kiếm</p>
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                    <div class="love">
-                        <p>Danh sách yêu thích</p>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="Vietnam">
-                        <img style="width: 20px;" src="../../assets/images/img_trangchu/coVN.jpg" alt="">
-                        <p>Tiếng việt</p>
-                    </div>
-                    <p>Tài khoản của tôi</p>
+
+            <div class="abcd">
+                <div class="find">
+                    <p>Tìm kiếm</p>
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
+                <div class="love">
+                    <p>Danh sách yêu thích</p>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="Vietnam">
+                    <img style="width: 20px;" src="../../assets/images/img_trangchu/coVN.jpg" alt="">
+                    <p>Tiếng việt</p>
+                </div>
+                <p>Tài khoản của tôi</p>
             </div>
-            <div class="logo">
-                <img style="width:84px;height: 73px;" src="../../assets/images/img_trangchu/1.jpg" alt="">
-                <p ><a style="border: 1px solid red;padding: 10px;border-radius: 10px;background-color: red;color: aliceblue;text-decoration: none;" href="http://127.0.0.1:5500/pages/client/trangchu.html">Trang chủ</a></p>
-                <p><a style="text-decoration: none;color: black;" href="http://127.0.0.1:5500/pages/client/cuahang.html">Cửa hàng</a></p>
-                <p><a style="text-decoration: none;color: black;" href="http://127.0.0.1:5500/pages/client/giohang.html">Giỏ hàng</a></p>
-            </div>
+        </div>
+        <div class="logo">
+            <img style="width:84px;height: 73px;" src="../../assets/images/img_trangchu/1.jpg" alt="">
+            <p><a style="border: 1px solid red;padding: 10px;border-radius: 10px;background-color: red;color: aliceblue;text-decoration: none;"
+                    href="http://127.0.0.1:5500/pages/client/trangchu.html">Trang chủ</a></p>
+            <p><a style="text-decoration: none;color: black;" href="http://127.0.0.1:5500/pages/client/cuahang.html">Cửa
+                    hàng</a></p>
+            <p><a style="text-decoration: none;color: black;" href="http://127.0.0.1:5500/pages/client/giohang.html">Giỏ
+                    hàng</a></p>
+        </div>
         <div>
-            <div style="position: relative; top: -200px;left:100px;color: aliceblue;font-size: 45px;background-color: red; border-radius: 20px;width: 200px;text-align: center;height: 80px;line-height:80px;">Giỏ hàng</div>
-            <div style="display: flex;color: aliceblue;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;position: relative;top: -250px;margin-left: 1100px;">
-            <div>Trang chủ</div>
-            <div>/</div> 
-            <div>Giỏ hàng</div>
+            <div
+                style="position: relative; top: -200px;left:100px;color: aliceblue;font-size: 45px;background-color: red; border-radius: 20px;width: 200px;text-align: center;height: 80px;line-height:80px;">
+                Giỏ hàng</div>
+            <div
+                style="display: flex;color: aliceblue;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;position: relative;top: -250px;margin-left: 1100px;">
+                <div>Trang chủ</div>
+                <div>/</div>
+                <div>Giỏ hàng</div>
             </div>
-                </div>
-        
+        </div>
 
+
+        <div class="content">
+            <p><b class="p1">Sản phẩm</b></p>
+            <p><b class="p2">Số lượng</b></p>
+            <p><b class="p3">Giá</b></p>
+        </div>
+        <div>
+            <ul id="dsgiohang">
                 <div class="content">
-                    <p><b class="p1">Sản phẩm</b></p>
-                    <p><b class="p2">Số lượng</b></p>
-                    <p><b class="p3">Giá</b></p>
+                    <p><b style="margin-left: -50px;"><span class="p4"></span></b></p>
+                    <p><b class="p5"></b></p>
+                    <p><b class="p6"></b></p>
                 </div>
-                <div>
-                    <ul id="dsgiohang">
-                        <div class="content">
-                            <p><b style="margin-left: -50px;" ><span class="p4"></span></b></p>
-                            <p><b class="p5"></b></p>
-                            <p><b class="p6"></b></p>
-                        </div>
-                    </ul>
-                  </div>
-                <div class="thao_tac">
-                    <input style="background-color: rgb(172, 180, 186);border-radius: 20px;text-align: center;" type="text" placeholder="Mã giảm giá">
-                   <button style="background-color: red;color: aliceblue;width: 200px;height: 50px;line-height: 50px;text-align: center;border-radius: 20px;font-weight: bold;"> Áp dụng phiếu giảm giá</button>
-                    <button onclick="updateCart()" style="background-color: red;color: aliceblue;width: 150px;border-radius: 20px;line-height: 50px;text-align: center;font-weight: bold;">Cập nhật giỏ hàng</button>
-                </div><br><br><br><br>
-                <div class="thanh_toan">
-                    <div style="display: flex;justify-content: space-around;width: 300px;">
-                    <p><b>Tổng tiền</b></p>
-                     </div><br>
-                     <div style="display: flex;justify-content: space-around;width: 300px;">
-                        <p><b >Sản phẩm</b></p>
-                        <input class="sp" style="width: 100px;" type="text">
-                         </div><br>
-                         <div style="display: flex;justify-content: space-around;width: 300px;">
-                            <p style=""><b>Thuế</b></p>
-                            <input class="thue" value="0" style="width: 100px;margin-left: 30px;" type="text">
-                             </div><br>
-                             <div style="display: flex;justify-content: space-around;width: 300px;">
-                                <p><b>Tổng cộng</b></p>
-                                <input class="tongcong" style="width: 100px;margin-left: -10px;" type="text">
-                                 </div><br>
-                    <div><br>
-                        <button style="background-color: red;color: aliceblue;width: 150px;border-radius: 20px;text-align: center;height: 30px;line-height: 30px;margin-left: 80px;"><b>Thanh toán</b></button><br><br>
-            <img style="width: 100%;height: 255px;" src="../../assets/images/img_trangchu/10.jpg" alt="">
+            </ul>
         </div>
+        <div class="thao_tac">
+            <input style="background-color: rgb(172, 180, 186);border-radius: 20px;text-align: center;" type="text"
+                placeholder="Mã giảm giá">
+            <button
+                style="background-color: red;color: aliceblue;width: 200px;height: 50px;line-height: 50px;text-align: center;border-radius: 20px;font-weight: bold;">
+                Áp dụng phiếu giảm giá</button>
+            <button onclick="updateCart()"
+                style="background-color: red;color: aliceblue;width: 150px;border-radius: 20px;line-height: 50px;text-align: center;font-weight: bold;">Cập
+                nhật giỏ hàng</button>
+        </div><br><br><br><br>
+        <div class="thanh_toan">
+            <div style="display: flex;justify-content: space-around;width: 300px;">
+                <p><b>Tổng tiền</b></p>
+            </div><br>
+            <div style="display: flex;justify-content: space-around;width: 300px;">
+                <p><b>Sản phẩm</b></p>
+                <input class="sp" style="width: 100px;" type="text">
+            </div><br>
+            <div style="display: flex;justify-content: space-around;width: 300px;">
+                <p style=""><b>Thuế</b></p>
+                <input class="thue" value="0" style="width: 100px;margin-left: 30px;" type="text">
+            </div><br>
+            <div style="display: flex;justify-content: space-around;width: 300px;">
+                <p><b>Tổng cộng</b></p>
+                <input class="tongcong" style="width: 100px;margin-left: -10px;" type="text">
+            </div><br>
+            <div><br>
+                <button
+                    style="background-color: red;color: aliceblue;width: 150px;border-radius: 20px;text-align: center;height: 30px;line-height: 30px;margin-left: 80px;"><b>Thanh
+                        toán</b></button><br><br>
+                <img style="width: 100%;height: 255px;" src="../../assets/images/img_trangchu/10.jpg" alt="">
+            </div>
 
-        <div class="footer">
-            <div class="footer_1">
-                <div>
-                    <img style="width:84px;height: 73px;" src="../../assets/images/img_trangchu/1.jpg" alt="">
+            <div class="footer">
+                <div class="footer_1">
+                    <div>
+                        <img style="width:84px;height: 73px;" src="../../assets/images/img_trangchu/1.jpg" alt="">
+                    </div>
+                    <p style="width:123px;height: 84px;font-size: 12px;">Petshop là nơi cung cấp những sản phẩm và dịch
+                        vụ tốt nhất cho bạn.</p>
                 </div>
-                <p style="width:123px;height: 84px;font-size: 12px;">Petshop là nơi cung cấp những sản phẩm và dịch vụ tốt nhất cho bạn.</p>
+
+
+
+
+
+
+
+
+                <div class="footer_2">
+                    <p style="font-size: 25px;height:40px;font-weight: bold;">Liên kết hữu ích</p>
+                    <p style="font-size: 12px;height:30px;">Câu hỏi thường gặp</p>
+                    <p style="font-size: 12px;height:30px;">Giới thiệu</p>
+                    <p style="font-size: 12px;height:30px;">Liên hệ chúng tôi</p>
+                </div>
+
+
+
+
+                <div class="footer_2">
+                    <p style="font-size: 25px;height:40px;font-weight: bold;">Tài khoản của tôi</p>
+                    <p style="font-size: 12px;height:30px;">Theo dõi đơn hàng của tôi</p>
+                    <p style="font-size: 12px;height:30px;">Danh sách yêu thích</p>
+                    <p style="font-size: 12px;height:30px;">Gửi phản hồi của bạn</p>
+                </div>
+
+
+
+
+                <div class="footer_4">
+                    <p>Hoạt động từ 8-18h hàng tuần.<br> Địa chỉ: 184 đường số 6, phường 7,<br> quận Gò Vấp, Tp. Hồ Chí
+                        Minh.
+                    </p>
+                </div>
+
+
+
+            </div>
+            <div class="fb_ins_tw">
+                <i style="color: blue;" class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i style="color: blue;" class="fa-brands fa-twitter"></i>
             </div>
 
 
@@ -104,127 +162,87 @@
 
 
 
-
-
-            <div class="footer_2">
-                <p style="font-size: 25px;height:40px;font-weight: bold;">Liên kết hữu ích</p>
-                <p style="font-size: 12px;height:30px;">Câu hỏi thường gặp</p>
-                <p style="font-size: 12px;height:30px;">Giới thiệu</p>
-                <p style="font-size: 12px;height:30px;">Liên hệ chúng tôi</p>
-            </div>
-
-
-
-
-            <div class="footer_2">
-                <p style="font-size: 25px;height:40px;font-weight: bold;">Tài khoản của tôi</p>
-                <p style="font-size: 12px;height:30px;">Theo dõi đơn hàng của tôi</p>
-                <p style="font-size: 12px;height:30px;">Danh sách yêu thích</p>
-                <p style="font-size: 12px;height:30px;">Gửi phản hồi của bạn</p>
-            </div>
-
-
-
-
-            <div class="footer_4">
-                <p>Hoạt động từ 8-18h hàng tuần.<br> Địa chỉ: 184 đường số 6, phường 7,<br> quận Gò Vấp, Tp. Hồ Chí Minh.
-                </p>
-            </div>
 
 
 
         </div>
-        <div class="fb_ins_tw">
-            <i style="color: blue;" class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-square-instagram"></i>
-            <i style="color: blue;" class="fa-brands fa-twitter"></i>
-        </div>
+        <script src="../../assets/js/client/giohang.js"></script>
+        <script>
+            var giohang = localStorage.getItem('giohang');
+            if (giohang) {
+                giohang = JSON.parse(giohang);
+                var dsgiohang = document.getElementById('dsgiohang');
 
+                for (var i = 0; i < giohang.length; i++) {
+                    var sp = giohang[i];
+                    var hienthi = '<li>' +
+                        '<div class="content">' +
+                        '<p><b class="p4">' + sp.namesp + '</b></p>' +
+                        '<p><input type="number" value="' + sp.soluong + '" min="0" step="1" onchange="changeQuantity(' + i + ', this.value)" class="p5"></p>' +
+                        '<p><b class="p6">' + sp.gia + '</b></p>' +
+                        '</div>' +
+                        '</li>';
 
+                    dsgiohang.insertAdjacentHTML('beforeend', hienthi);
+                }
+            } else {
+                alert('Giỏ hàng của bạn đang trống.');
+            }
 
+            function changeQuantity(index, quantity) {
+                var giohang = JSON.parse(localStorage.getItem('giohang'));
+                giohang[index].soluong = quantity;
+                localStorage.setItem('giohang', JSON.stringify(giohang));
+                updateCart();
+            }
+            // Function to remove an item from the cart
+            function removeItem(index) {
+                var giohang = JSON.parse(localStorage.getItem('giohang'));
+                giohang.splice(index, 1);
+                localStorage.setItem('giohang', JSON.stringify(giohang));
+                updateCart();
+            }
 
+            // Update and display the cart
+            function updateCart() {
+                var giohang = JSON.parse(localStorage.getItem('giohang'));
+                var dsgiohang = document.getElementById('dsgiohang');
+                var tongTien = 0;
+                var tenSanPham = '';
 
+                dsgiohang.innerHTML = '';
 
+                for (var i = 0; i < giohang.length; i++) {
+                    var sp = giohang[i];
+                    var thanhTien = sp.soluong * sp.gia;
+                    tongTien += thanhTien;
+                    tenSanPham += sp.namesp + ', ';
 
+                    var hienthi = '<li>' +
+                        '<div class="content">' +
+                        '<p><b class="p4">' + sp.namesp + '</b></p>' +
+                        '<p><b class="p5">' + sp.soluong + '</b></p>' +
+                        '<p><b class="p6">' + sp.gia + '</b></p>' +
+                        '<button onclick="removeItem(' + i + ')">Xóa</button>' +
+                        '</div>' +
+                        '</li>';
 
+                    dsgiohang.insertAdjacentHTML('beforeend', hienthi);
+                }
 
-    </div>
-    <script src="../../assets/js/client/giohang.js"></script>   
-    <script>
-        var giohang = localStorage.getItem('giohang');
-if (giohang) {
-  giohang = JSON.parse(giohang);
-  var dsgiohang = document.getElementById('dsgiohang');
+                var tongTienElement = document.getElementById('tongtien');
+                var tenSanPhamElement = document.getElementById('tensanpham');
 
-  for (var i = 0; i < giohang.length; i++) {
-    var sp = giohang[i];
-    var hienthi = '<li>' +
-                    '<div class="content">' +
-                      '<p><b class="p4">' + sp.namesp + '</b></p>' +
-                      '<p><input type="number" value="' + sp.soluong + '" min="0" step="1" onchange="changeQuantity(' + i + ', this.value)" class="p5"></p>' +
-                      '<p><b class="p6">' + sp.gia + '</b></p>' +
-                    '</div>' +
-                  '</li>';
+                tongTienElement.textContent = tongTien.toFixed(2) + ' đ';
+                tenSanPhamElement.textContent = tenSanPham.substring(0, tenSanPham.length - 2);
 
-    dsgiohang.insertAdjacentHTML('beforeend', hienthi);
-  }
-} else {
-  alert('Giỏ hàng của bạn đang trống.');
-}
+                var slSanPhamElement = document.getElementById('slsanpham');
+                slSanPhamElement.textContent = giohang.length;
+            }
 
-function changeQuantity(index, quantity) {
-  var giohang = JSON.parse(localStorage.getItem('giohang'));
-  giohang[index].soluong = quantity;
-  localStorage.setItem('giohang', JSON.stringify(giohang));
-  updateCart();
-}
-// Function to remove an item from the cart
-function removeItem(index) {
-  var giohang = JSON.parse(localStorage.getItem('giohang'));
-  giohang.splice(index, 1);
-  localStorage.setItem('giohang', JSON.stringify(giohang));
-  updateCart();
-}
+            updateCart();
 
-// Update and display the cart
-function updateCart() {
-  var giohang = JSON.parse(localStorage.getItem('giohang'));
-  var dsgiohang = document.getElementById('dsgiohang');
-  var tongTien = 0;
-  var tenSanPham = '';
-
-  dsgiohang.innerHTML = '';
-
-  for (var i = 0; i < giohang.length; i++) {
-    var sp = giohang[i];
-    var thanhTien = sp.soluong * sp.gia;
-    tongTien += thanhTien;
-    tenSanPham += sp.namesp + ', ';
-
-    var hienthi = '<li>' +
-                    '<div class="content">' +
-                      '<p><b class="p4">' + sp.namesp + '</b></p>' +
-                      '<p><b class="p5">' + sp.soluong + '</b></p>' +
-                      '<p><b class="p6">' + sp.gia + '</b></p>' +
-                      '<button onclick="removeItem(' + i + ')">Xóa</button>' +
-                    '</div>' +
-                  '</li>';
-
-    dsgiohang.insertAdjacentHTML('beforeend', hienthi);
-  }
-
-  var tongTienElement = document.getElementById('tongtien');
-  var tenSanPhamElement = document.getElementById('tensanpham');
-
-  tongTienElement.textContent = tongTien.toFixed(2) + ' đ';
-  tenSanPhamElement.textContent = tenSanPham.substring(0, tenSanPham.length - 2);
-
-  var slSanPhamElement = document.getElementById('slsanpham');
-  slSanPhamElement.textContent = giohang.length;
-}
-
-updateCart();
-
-    </script>
+        </script>
 </body>
+
 </html>
